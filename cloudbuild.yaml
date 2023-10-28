@@ -7,4 +7,4 @@ steps:
 artifacts:
   objects:
     location: 'gs://${PROJECT_ID}-cloud-function-sources/${_FUNC_DIR}'
-    paths: ['${FUNC_DIR}/${REVISION_ID}.zip']
+    paths: ['${_FUNC_DIR}/${REVISION_ID}.zip']
