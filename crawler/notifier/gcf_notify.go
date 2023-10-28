@@ -8,6 +8,7 @@ import (
 
 	"cloud.google.com/go/functions/metadata"
 	"github.com/google/uuid"
+	"github.com/suzuito/sandbox2-go/common/cusecase/clog"
 	"github.com/suzuito/sandbox2-go/common/terrors"
 )
 
@@ -37,12 +38,11 @@ func NotifierNotify(ctx context.Context, e FirestoreEvent) error {
 	if err != nil {
 		return fmt.Errorf("metadata.FromContext: %w", err)
 	}
-	// clog.L.Infof(ctx, "Function triggered by change to: %v", meta.Resource)
-	// clog.L.Infof(ctx, "Old value: %+v", e.OldValue)
-	// clog.L.Infof(ctx, "New value: %+v", e.Value)
+	clog.L.Infof(ctx, "Function triggered by change to: %v", meta.Resource)
+	clog.L.Infof(ctx, "Old value: %+v", e.OldValue)
+	clog.L.Infof(ctx, "New value: %+v", e.Value)
 	fullPath := strings.Split(e.Value.Name, "/documents/")[1]
 	if err := u.NotifyOnGCF(ctx, fullPath); err != nil {
-		// return terrors.Wrap(err)
 		return terrors.Wrap(err)
 	}
 	return nil
