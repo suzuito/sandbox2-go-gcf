@@ -3,8 +3,8 @@ steps:
   entrypoint: /bin/bash
   args:
   - -c
-  - apt update && apt install -y zip && cp package.sh ${FUNC_DIR} && cd ${FUNC_DIR} && bash package.sh ${REVISION_ID}
+  - apt update && apt install -y zip && cp package.sh ${_FUNC_DIR} && cd ${_FUNC_DIR} && bash package.sh ${REVISION_ID}
 artifacts:
   objects:
-    location: 'gs://${PROJECT_ID}-cloud-function-sources/${FUNC_DIR}'
+    location: 'gs://${PROJECT_ID}-cloud-function-sources/${_FUNC_DIR}'
     paths: ['${FUNC_DIR}/${REVISION_ID}.zip']
