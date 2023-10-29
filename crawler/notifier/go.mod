@@ -5,7 +5,7 @@ go 1.21
 require (
 	cloud.google.com/go/functions v1.15.3
 	github.com/GoogleCloudPlatform/functions-framework-go v1.8.0
-	github.com/google/uuid v1.3.1
+	github.com/google/uuid v1.4.0
 	github.com/suzuito/sandbox2-go v0.0.0-20231028013755-bc3b8e6d8ed1
 )
 
