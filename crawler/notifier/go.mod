@@ -6,14 +6,14 @@ require (
 	cloud.google.com/go/functions v1.15.3
 	github.com/GoogleCloudPlatform/functions-framework-go v1.8.0
 	github.com/google/uuid v1.4.0
-	github.com/suzuito/sandbox2-go v0.0.0-20231028013755-bc3b8e6d8ed1
+	github.com/suzuito/sandbox2-go v1.0.0
 )
 
 require (
 	cloud.google.com/go v0.110.8 // indirect
 	cloud.google.com/go/compute v1.23.0 // indirect
 	cloud.google.com/go/compute/metadata v0.2.3 // indirect
-	cloud.google.com/go/firestore v1.13.0 // indirect
+	cloud.google.com/go/firestore v1.14.0 // indirect
 	cloud.google.com/go/longrunning v0.5.1 // indirect
 	github.com/bwmarrin/discordgo v0.27.1 // indirect
 	github.com/cloudevents/sdk-go/v2 v2.14.0 // indirect
