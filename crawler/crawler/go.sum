@@ -904,8 +904,8 @@ github.com/stretchr/testify v1.8.0/go.mod h1:yNjHg4UonilssWZ8iaSj1OCr/vHnekPRkoO
 github.com/stretchr/testify v1.8.1/go.mod h1:w2LPCIKwWwSfY2zedu0+kehJoqGctiVI29o6fzry7u4=
 github.com/stretchr/testify v1.8.4 h1:CcVxjf3Q8PM0mHUKJCdn+eZZtm5yQwehR5yeSVQQcUk=
 github.com/stretchr/testify v1.8.4/go.mod h1:sz/lmYIOXD/1dqDmKjjqLyZ2RngseejIcXlSw2iwfAo=
-github.com/suzuito/sandbox2-go v1.1.1-0.20231105130436-293e5d272b2f h1:jmGSot4Bq8S5BImb1EMtnq0UPTQjxhFuKwvmw6YM0mc=
-github.com/suzuito/sandbox2-go v1.1.1-0.20231105130436-293e5d272b2f/go.mod h1:utMCnK6ECzYtcfI/6/41g2zKZrBw+TxHfz8HcjzSvvE=
+github.com/suzuito/sandbox2-go v1.1.1-0.20231105140901-d694eef8c1c5 h1:/NMy5bSyX4S3vzUVN34XgfEDBtVd1LJBvfEfKNq0muc=
+github.com/suzuito/sandbox2-go v1.1.1-0.20231105140901-d694eef8c1c5/go.mod h1:8XCthBbqdkr7vc40DOCUs4zcavUuhP6a0LqSXaFlHx0=
 github.com/valyala/bytebufferpool v1.0.0 h1:GqA5TC/0021Y/b9FG4Oi9Mr3q7XYx6KllzawFIhcdPw=
 github.com/valyala/bytebufferpool v1.0.0/go.mod h1:6bBcMArwyJ5K/AmCkWv1jt77kVWyCJ6HpOuEn7z0Csc=
 github.com/yuin/goldmark v1.1.25/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
