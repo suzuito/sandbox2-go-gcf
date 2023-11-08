@@ -3,7 +3,7 @@ module github.com/suzuito/sandbox2-go-gcf/crawler/notifier
 go 1.21
 
 require (
-	cloud.google.com/go/functions v1.15.3
+	cloud.google.com/go/functions v1.15.4
 	github.com/GoogleCloudPlatform/functions-framework-go v1.8.0
 	github.com/google/uuid v1.4.0
 	github.com/suzuito/sandbox2-go v1.2.0
