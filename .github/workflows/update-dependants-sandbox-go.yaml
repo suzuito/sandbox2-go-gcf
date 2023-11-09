@@ -8,13 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: echo ${{ github.event.client_payload.version }}
-      - run: echo ${{ github.event.client_payload.package }}
       - run: cd crawler/crawler && go get -u ${{ github.event.client_payload.package }}@${{ github.event.client_payload.version }}
       - run: cd crawler/notifier && go get -u ${{ github.event.client_payload.package }}@${{ github.event.client_payload.version }}
       - run: git config --global user.email "you@example.com"
       - run: git config --global user.name "Your Name"
       - run: git checkout -b up_go_depends/${{ github.event.client_payload.package }}-${{ github.event.client_payload.version }} origin/main
-      - run: git commit -m "Automatically update dependants of go package\nUpdate version of ${{ github.event.client_payload.package }}@${{ github.event.client_payload.version }}"
+      - run: git commit -m "Automatically update dependants of go package\nUpdate version of ${{ github.event.client_payload.package }}@${{ github.event.client_payload.version }}" -a
       - run: git push
       - run: gh pr create --title "Up ${{ github.event.client_payload.package }} into ${{ github.event.client_payload.version }}" --base main --head=up_go_depends/${{ github.event.client_payload.package }}-${{ github.event.client_payload.version }}
