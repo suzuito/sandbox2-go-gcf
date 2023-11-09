@@ -8,4 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: echo ${{ github.event.client_payload.message }}
+      - run: echo ${{ github.event.client_payload.message1 }}
+      - run: echo ${{ github.event.client_payload.message2 }}
