@@ -1,6 +1,6 @@
 on:
   repository_dispatch:
-    types: [create_pr]
+    types: [create_pr_to_update_dependants_go_package]
 
 jobs:
   create-pr:
@@ -8,5 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: echo ${{ github.event.client_payload.message1 }}
-      - run: echo ${{ github.event.client_payload.message2 }}
+      - run: echo ${{ github.event.client_payload.version }}
+      - run: echo ${{ github.event.client_payload.package }}
+      - run: cd crawler/crawler && go get -u ${{ github.event.client_payload.package }}@${{ github.event.client_payload.version }}
+      - run: cd crawler/notifier && go get -u ${{ github.event.client_payload.package }}@${{ github.event.client_payload.version }}
+      - run: git diff
