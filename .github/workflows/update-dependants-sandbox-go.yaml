@@ -1,0 +1,11 @@
+on:
+  repository_dispatch:
+    types: [create_pr]
+
+jobs:
+  create-pr:
+    permissions: write-all
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo ${{ github.event.client_payload.message }}
