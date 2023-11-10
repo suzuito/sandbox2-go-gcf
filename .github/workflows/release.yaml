@@ -5,7 +5,7 @@ on:
 
 jobs:
   release:
-    if: github.event.pull_request.merged == true
+    if: github.event.pull_request.merged == true && !startsWith(github.event.pull_request.title, '[no release]')
     permissions: write-all
     runs-on: ubuntu-latest
     steps:
