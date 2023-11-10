@@ -1,0 +1,16 @@
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  release:
+    if: github.event.pull_request.merged == true
+    permissions: write-all
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo ${{ github.event.pull_request.title }}
+      # - run: bash release.sh
+      #   env:
+      #     GH_TOKEN: ${{ github.token }}
