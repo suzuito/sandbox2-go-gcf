@@ -4,16 +4,7 @@ steps:
   args:
   - -c
   - apt update && apt install -y zip && cp package.sh ${_FUNC_DIR} && cd ${_FUNC_DIR} && bash package.sh ${TAG_NAME}
-- name: 'gcr.io/cloud-builders/curl'
-  entrypoint: /bin/bash
-  args:
-  - -c
-  - bash dispatch-terraform.sh ${_ENV} primary ${TAG_NAME}
 artifacts:
   objects:
     location: 'gs://${PROJECT_ID}-cloud-function-sources/${_FUNC_DIR}'
     paths: ['${_FUNC_DIR}/${TAG_NAME}.zip']
-availableSecrets:
-  secretManager:
-  - versionName: projects/${PROJECT_NUMBER}/secrets/github_personal_token/v2
-  - env: 'GH_TOKEN'
