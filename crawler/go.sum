@@ -910,6 +910,8 @@ github.com/stretchr/testify v1.8.4 h1:CcVxjf3Q8PM0mHUKJCdn+eZZtm5yQwehR5yeSVQQcU
 github.com/stretchr/testify v1.8.4/go.mod h1:sz/lmYIOXD/1dqDmKjjqLyZ2RngseejIcXlSw2iwfAo=
 github.com/suzuito/sandbox2-go v1.2.3-0.20231118073848-c3ea56a19080 h1:JofVWYIB71Zowm6lqontrpBN+ZyFWecyII4fM+KaGAo=
 github.com/suzuito/sandbox2-go v1.2.3-0.20231118073848-c3ea56a19080/go.mod h1:inKVZtTN63ouLbCoBxcnmOX59guQ8aXURvUWHrZzVEk=
+github.com/suzuito/sandbox2-go v1.3.0 h1:JMgNI6bDYote8z/meDwKsXZofu8V75FdEYTxu5Rp3CI=
+github.com/suzuito/sandbox2-go v1.3.0/go.mod h1:inKVZtTN63ouLbCoBxcnmOX59guQ8aXURvUWHrZzVEk=
 github.com/valyala/bytebufferpool v1.0.0 h1:GqA5TC/0021Y/b9FG4Oi9Mr3q7XYx6KllzawFIhcdPw=
 github.com/valyala/bytebufferpool v1.0.0/go.mod h1:6bBcMArwyJ5K/AmCkWv1jt77kVWyCJ6HpOuEn7z0Csc=
 github.com/yuin/goldmark v1.1.25/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
