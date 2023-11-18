@@ -1,12 +1,12 @@
-module github.com/suzuito/sandbox2-go-gcf/crawler/notifier
+module github.com/suzuito/sandbox2-go-gcf/crawler/crawler
 
 go 1.21
 
 require (
-	cloud.google.com/go/functions v1.15.4
 	github.com/GoogleCloudPlatform/functions-framework-go v1.8.0
+	github.com/cloudevents/sdk-go/v2 v2.14.0
 	github.com/google/uuid v1.4.0
-	github.com/suzuito/sandbox2-go v1.2.2
+	github.com/suzuito/sandbox2-go v1.2.3-0.20231118073848-c3ea56a19080
 )
 
 require (
@@ -14,11 +14,13 @@ require (
 	cloud.google.com/go/compute v1.23.1 // indirect
 	cloud.google.com/go/compute/metadata v0.2.3 // indirect
 	cloud.google.com/go/firestore v1.14.0 // indirect
+	cloud.google.com/go/functions v1.15.2 // indirect
+	cloud.google.com/go/iam v1.1.3 // indirect
 	cloud.google.com/go/longrunning v0.5.2 // indirect
+	cloud.google.com/go/pubsub v1.33.0 // indirect
 	github.com/PuerkitoBio/goquery v1.8.1 // indirect
 	github.com/andybalholm/cascadia v1.3.1 // indirect
 	github.com/bwmarrin/discordgo v0.27.1 // indirect
-	github.com/cloudevents/sdk-go/v2 v2.14.0 // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
 	github.com/golang/protobuf v1.5.3 // indirect
 	github.com/google/s2a-go v0.1.7 // indirect
@@ -27,6 +29,8 @@ require (
 	github.com/gorilla/websocket v1.4.2 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/kelseyhightower/envconfig v1.4.0 // indirect
+	github.com/mmcdole/gofeed v1.2.1 // indirect
+	github.com/mmcdole/goxpp v1.1.0 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	go.opencensus.io v0.24.0 // indirect

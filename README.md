@@ -8,4 +8,4 @@ Define
 
 Procedure
 
-1. Run Github actions `create-release-draft`.
+1. Merge PR for main branch.

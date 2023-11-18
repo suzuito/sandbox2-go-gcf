@@ -1,4 +1,4 @@
-package gcfcrawler
+package crawler
 
 import (
 	"context"
