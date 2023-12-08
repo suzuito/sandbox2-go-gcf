@@ -11,13 +11,8 @@ import (
 
 func CrawlerStartPipelinePeriodically(ctx context.Context, e event.Event) error {
 	ctx = context.WithValue(ctx, "traceId", uuid.New().String())
-	msg := struct {
-		CrawlerStarterSettingID crawler.CrawlerStarterSettingID
-	}{}
-	if err := e.DataAs(&msg); err != nil {
-		return err
-	}
-	if err := u.StartPipelinePeriodically(ctx, msg.CrawlerStarterSettingID); err != nil {
+	crawlerStarterSettingID := string(e.Data())
+	if err := u.StartPipelinePeriodically(ctx, crawler.CrawlerStarterSettingID(crawlerStarterSettingID)); err != nil {
 		clog.L.Errorf(ctx, "%+v", err)
 		return err
 	}
