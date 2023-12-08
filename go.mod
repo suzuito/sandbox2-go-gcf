@@ -6,7 +6,7 @@ require (
 	github.com/GoogleCloudPlatform/functions-framework-go v1.8.0
 	github.com/cloudevents/sdk-go/v2 v2.14.0
 	github.com/google/uuid v1.4.0
-	github.com/suzuito/sandbox2-go v1.3.8
+	github.com/suzuito/sandbox2-go v1.3.9-0.20231208132341-bbce7fd1afb5
 )
 
 require (
