@@ -11,8 +11,12 @@ import (
 
 func CrawlerStartPipelinePeriodically(ctx context.Context, e event.Event) error {
 	ctx = context.WithValue(ctx, "traceId", uuid.New().String())
-	crawlerStarterSettingID := string(e.Data())
-	if err := u.StartPipelinePeriodically(ctx, crawler.CrawlerStarterSettingID(crawlerStarterSettingID)); err != nil {
+	msg, err := initCloudEventFunction(ctx, &e)
+	if err != nil {
+		clog.L.Errorf(ctx, "%+v", err)
+		return err
+	}
+	if err := u.StartPipelinePeriodically(ctx, crawler.CrawlerStarterSettingID(msg.Message.Data)); err != nil {
 		clog.L.Errorf(ctx, "%+v", err)
 		return err
 	}
