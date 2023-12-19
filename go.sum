@@ -949,6 +949,8 @@ github.com/suzuito/sandbox2-go v1.3.10-0.20231209125603-753dd441c1ee h1:NyqcAxfr
 github.com/suzuito/sandbox2-go v1.3.10-0.20231209125603-753dd441c1ee/go.mod h1:cqqSdR1umPJR9cFWnKeTeSkDEpiMZXo+0jPavwO5lyg=
 github.com/suzuito/sandbox2-go v1.3.10-0.20231213214747-305904030b38 h1:mbXoCX45RANHE+lqxkFV8W5VkFi6LOkHeS2UXO+axEY=
 github.com/suzuito/sandbox2-go v1.3.10-0.20231213214747-305904030b38/go.mod h1:cqqSdR1umPJR9cFWnKeTeSkDEpiMZXo+0jPavwO5lyg=
+github.com/suzuito/sandbox2-go v1.3.10 h1:3EqEb9R5bM+9nev72hC90yjUkG1f6neCf9vW74UFkhA=
+github.com/suzuito/sandbox2-go v1.3.10/go.mod h1:cqqSdR1umPJR9cFWnKeTeSkDEpiMZXo+0jPavwO5lyg=
 github.com/valyala/bytebufferpool v1.0.0 h1:GqA5TC/0021Y/b9FG4Oi9Mr3q7XYx6KllzawFIhcdPw=
 github.com/valyala/bytebufferpool v1.0.0/go.mod h1:6bBcMArwyJ5K/AmCkWv1jt77kVWyCJ6HpOuEn7z0Csc=
 github.com/yuin/goldmark v1.1.25/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
