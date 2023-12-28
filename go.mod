@@ -18,6 +18,7 @@ require (
 	cloud.google.com/go/iam v1.1.5 // indirect
 	cloud.google.com/go/longrunning v0.5.4 // indirect
 	cloud.google.com/go/pubsub v1.33.0 // indirect
+	cloud.google.com/go/storage v1.36.0 // indirect
 	github.com/PuerkitoBio/goquery v1.8.1 // indirect
 	github.com/andybalholm/cascadia v1.3.1 // indirect
 	github.com/bwmarrin/discordgo v0.27.1 // indirect
